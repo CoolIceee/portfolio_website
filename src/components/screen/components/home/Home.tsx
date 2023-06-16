@@ -1,6 +1,6 @@
 import { type FC } from 'react'
 
-import { Sidebar } from '../../../module/sidebar/Sidebar'
+import { Sidebar } from '../../../module/sidebar'
 
 export const Home: FC = () => {
   return (

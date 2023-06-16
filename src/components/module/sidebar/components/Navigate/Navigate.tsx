@@ -1,41 +1,23 @@
 import { type FC } from 'react'
 
-import profile from '../../../../../assets/profile.png'
+import logo from '../../../../../assets/logo.png'
+import { Contact } from '../routers/contact/Contact'
+import { Folder } from '../routers/folder/Folder'
+import { Profile } from '../routers/profile/Profile'
+import { Skills } from '../routers/skills/Skills'
+import { Timeline } from '../routers/timeline/Timeline'
 
 export const Navigate: FC = () => {
   return (
-    <ul className='w-full h-[400px] flex flex-col justify-between '>
-      <li>logo</li>
-      <li className='w-full h-14 cursor-pointer  text-center flex items-center hover:bg-slate-100'>
-        <div className='w-auto h-11 px-2'>
-          <img src={profile} alt='profile' className='max-w-full max-h-full' />
-        </div>
-        <b className='text-slate-500 px-2'>ОБО МНЕ</b>
+    <ul className='w-full h-[450px] flex flex-col justify-between'>
+      <li className='w-full h-20 border-b-2'>
+        <img src={logo} className='max-w-full max-h-full' />
       </li>
-      <li className='w-full h-14 border-2 text-center flex items-center'>
-        <div className='w-auto h-11 px-2'>
-          <img src={profile} alt='profile' className='max-w-full max-h-full' />
-        </div>
-        <b className='text-slate-500 px-2'>НАВЫКИ</b>
-      </li>
-      <li className='w-full h-14 border-2 text-center flex items-center'>
-        <div className='w-auto h-11 px-2'>
-          <img src={profile} alt='profile' className='max-w-full max-h-full' />
-        </div>
-        <b className='text-slate-500 px-2'>ТАЙМЛАЙН</b>
-      </li>
-      <li className='w-full h-14 border-2 text-center flex items-center'>
-        <div className='w-auto h-11 px-2'>
-          <img src={profile} alt='profile' className='max-w-full max-h-full' />
-        </div>
-        <b className='text-slate-500 px-2'>ПРОЕКТЫ</b>
-      </li>
-      <li className='w-full h-14 border-2 text-center flex items-center'>
-        <div className='w-auto h-11 px-2'>
-          <img src={profile} alt='profile' className='max-w-full max-h-full' />
-        </div>
-        <b className='text-slate-500 px-2'>КОНТАКТЫ</b>
-      </li>
+      <Profile />
+      <Skills />
+      <Folder />
+      <Timeline />
+      <Contact />
     </ul>
   )
 }
