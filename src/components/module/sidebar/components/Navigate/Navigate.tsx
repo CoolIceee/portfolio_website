@@ -1,6 +1,6 @@
 import { type FC } from 'react'
 
-import logo from '../../../../../assets/logo.png'
+import video from '../../../../../assets//video/video.mp4'
 import { Contact } from '../routers/contact/Contact'
 import { Folder } from '../routers/folder/Folder'
 import { Profile } from '../routers/profile/Profile'
@@ -9,15 +9,24 @@ import { Timeline } from '../routers/timeline/Timeline'
 
 export const Navigate: FC = () => {
   return (
-    <ul className='w-full h-[450px] flex flex-col justify-between'>
-      <li className='w-full h-20 border-b-2'>
-        <img src={logo} className='max-w-full max-h-full' />
+    <ul className='w-full h-[600px] flex flex-col justify-between'>
+      <li className='w-full h-40 flex justify-center border-2'>
+        <video className='w-full' controls>
+          <source type='video/ogg; codecs="theora, vorbis"' src={video} />
+        </video>
       </li>
-      <Profile />
-      <Skills />
-      <Folder />
-      <Timeline />
-      <Contact />
+      <li className='w-full h-[350px] flex flex-col  justify-between'>
+        <Profile />
+        <Skills />
+        <Folder />
+        <Timeline />
+        <Contact />
+      </li>
+      <li>
+        <button className='w-full h-12 border-[3px] rounded-xl text-slate-500'>
+          <b>РЕЗЮМЕ</b>
+        </button>
+      </li>
     </ul>
   )
 }
