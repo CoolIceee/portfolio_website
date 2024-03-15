@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #141414;
+  font-family: 'Nunito Sans', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+ 
+}
