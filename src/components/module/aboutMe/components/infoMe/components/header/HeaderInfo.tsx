@@ -5,30 +5,12 @@ import iGit from '../../../../../../../assets/iGit.jpeg'
 import './headerInfo.css'
 export const HeaderInfo: FC = () => {
   return (
-    <div className='flex justify-between relative'>
-      <div className='flex items-center '>
-        <div className='w-[5rem] border-[0.5rem] border-[#787BFE]    rounded-full git_info_container '>
-          <img className='w-full rounded-full' src={iGit} />
-        </div>
-        <div
-          className='text-lg text-white bg-[#787BFE] absolute left-[4.5rem] px-4 py-2 rounded-e-lg
-        '
-        >
-          Чем я занимаюсь
-        </div>
+    <div className='flex relative items-center  w-[100%]'>
+      <div className='w-[6rem] border-[#B50013] border-[0.5rem] rounded-full z-10'>
+        <img src={iGit} className='w-full rounded-full' />
       </div>
-      <ul className='flex w-[21%] justify-between items-center'>
-        <li className='flex justify-center items-center'>
-          <button className='w-[5rem] h-[2rem] git_info_container bg-[#787BFE] rounded-lg text-white text-sm text-center'>
-            🇷🇺 РУ
-          </button>
-        </li>
-        <li className='flex justify-center items-center'>
-          <button className='w-[5rem] h-[2rem] git_info_container bg-[#787BFE]  rounded-lg text-white text-sm text-center'>
-            🇬🇧 EN
-          </button>
-        </li>
-      </ul>
+      <div className='absolute w-[20%] h-[4rem] bg-[#B50013] rounded-e-3xl left-[5.2rem]'></div>
+      <div className='w-[80%] h-[2rem] bg-[#B50013]'></div>
     </div>
   )
 }
