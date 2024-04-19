@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import { InfoMe } from './infoMe/InfoMe'
+import { InfoMe } from './aboutMe/aboutMe'
 
-export const AboutMe: FC = () => {
+export const InfoByCategory: FC = () => {
   return (
     <div className='w-full h-[90%]'>
       <InfoMe />

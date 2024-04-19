@@ -7,6 +7,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <BrowserRouter>
+  <div className='noise'></div>
     <App />
   </BrowserRouter>
 )
